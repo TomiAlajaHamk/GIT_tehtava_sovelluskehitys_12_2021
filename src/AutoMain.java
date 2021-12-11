@@ -2,12 +2,13 @@
 public class AutoMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	Auto auto = new Auto();	
 		
-
 	}
 
 }
+
 class Auto
 {
 	public String merkki;
@@ -15,6 +16,14 @@ class Auto
 	public int bensanMaara;
 	
 
+	public Auto()
+	{
+		merkki = "Toyota";
+		malli = "Yaris";
+		bensanMaara = 10;
+		NaytaTiedot();
+	}
+	
 	public void Jarruta()
 	{
 		
@@ -27,7 +36,9 @@ class Auto
 	
 	public void NaytaTiedot()
 	{
-		
+		System.out.println("Brand: " + merkki);
+		System.out.println("Model: " + malli);
+		System.out.println("Fuel: " + bensanMaara);
 	}
 	
 }
