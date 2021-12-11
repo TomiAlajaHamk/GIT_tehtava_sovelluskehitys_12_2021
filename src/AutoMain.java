@@ -6,7 +6,8 @@ public class AutoMain {
 		
 	Auto auto1 = new Auto();	
 	auto1.NaytaTiedot();
-	
+	auto1.Kiihdyta();
+	auto1.NaytaTiedot();
 	}
 
 }
@@ -22,7 +23,7 @@ class Auto
 	{
 		merkki = "Toyota";
 		malli = "Yaris";
-		bensanMaara = 10;
+		bensanMaara = 0;
 
 	}
 	
@@ -33,6 +34,18 @@ class Auto
 	
 	public void Kiihdyta()
 	{
+		
+		if (bensanMaara>0)
+
+		{
+			bensanMaara = bensanMaara-1;
+		}
+
+		else
+
+		{
+			System.out.println("Tankissa ei ole bensaa");
+		}
 		
 	}
 	
