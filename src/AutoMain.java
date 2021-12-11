@@ -3,8 +3,10 @@ public class AutoMain {
 
 	public static void main(String[] args) {
 	
-	Auto auto = new Auto();	
 		
+	Auto auto1 = new Auto();	
+	auto1.NaytaTiedot();
+	
 	}
 
 }
@@ -21,7 +23,7 @@ class Auto
 		merkki = "Toyota";
 		malli = "Yaris";
 		bensanMaara = 10;
-		NaytaTiedot();
+
 	}
 	
 	public void Jarruta()
@@ -42,3 +44,4 @@ class Auto
 	}
 	
 }
+
